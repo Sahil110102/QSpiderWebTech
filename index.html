@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+
+//Uisng The Literal Way 
+        /*let person2 = {
+            FirstName : "Sahil",
+            LastName : "Kumar",
+            Age : 25,
+            Address : {FlatNo : 203, BuildingName : "Ashirwad"}
+        }
+
+        // console.log(person2.Age) 
+        console.log(person2.Address.FlatNo)
+        console.log(Object.keys(person2));*/
+
+
+//Using New Keyword
+        /*let person = new Object();
+
+        person.firstName = "Sahil";
+        person.lastName = "Bhosale";
+        person.age = 22;
+
+        //We can use [] also instead of .
+        person["Number"] = 9004170723
+        person["Skills"] = ["Html", "CSS", "javScript"];
+
+        console.log(person.Skills[1]);
+        person.keys()*/
+
+//Using Class / Object Constructors
+
+    /*class Car {
+        constructor(name, color, price) {
+            this.name = name;
+            this.color = color;
+            this.price = price;
+        }
+    }
+
+    let BMW = new Car ('BMW', 'Blue', 400000000)
+    let Lambo = new Car ('Lambo', 'Red', 800000000)
+    let Ferrari = new Car ('Ferarri', 'Red', 654000000)
+    console.log(BMW);
+    console.log(Lambo);
+    console.log(Ferrari);*/
+
+/*Using Prompts
+    let name1 = prompt("Enter the name of the car ")
+    let color1 = prompt("Enter the color of the car ")
+    let price1 = prompt("Enter the price of the car ")
+
+    let NewCar = new Car( name1 , color1 , price1)
+    console.log(NewCar);*/
+    
+// Using Function
+    /*function User(name , id , age){
+        this.name = name;
+        this.id = id;
+        this.age = age;
+    }
+
+    let person10 = new User("Sahil", "n_m", 22)
+    console.log(person10);*/
+
+    let actress = {
+        fname : "Deepika",
+        lname : "Paduakone",
+        age : 40,
+        number : 900415237,
+        address : {
+            street : "street1",
+            city : "city1",
+            state : "state1",
+        }
+    }
+    console.log(Object.keys(actress)); 
+    console.log(Object.values(actress)); 
+    console.log(Object.entries(actress)[1]); 
+    console.log(Object.seal(actress)); // Can Modify but Can't Modify 
+    // let Father = actress.fatherName = "Prakash";
+    // console.log(Father);
+
+    console.log(Object.isSealed(actress)); 
+    console.log(Object.freeze(actress)); //Can't Modify but Can't Modify 
+
+    console.log(Object.isFrozen(actress)); 
+    console.log(Object.hasOwn(actress, "fname")); 
+
+
+
+
+        
+    </script>
+    
+</body>
+</html>
